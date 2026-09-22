@@ -37,7 +37,13 @@ proyecto_frontend/
 ├── contacto.html
 ├── admin.html
 ├── css/
-│   └── estilos.css
+│   ├── global.css
+│   ├── index.css
+│   ├── login.css
+│   ├── catalogo.css
+│   ├── detalle.css
+│   ├── contacto.css
+│   └── admin.css
 ├── js/
 │   ├── datos.js
 │   ├── storage.js
