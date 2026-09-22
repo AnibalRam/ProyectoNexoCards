@@ -1,0 +1,355 @@
+:root {
+    --nexo-oscuro: #1e1e2f;
+    --nexo-oscuro-2: #2d2d46;
+    --nexo-dorado: #f4c95d;
+    --nexo-fondo: #f5f5f7;
+    --nexo-texto: #222;
+    --nexo-gris: #6b7280;
+    --nexo-exito: #198754;
+    --nexo-error: #b42318;
+    --nexo-borde: #d8dbe2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--nexo-fondo);
+    color: var(--nexo-texto);
+    line-height: 1.6;
+}
+
+header.site-header {
+    background-color: var(--nexo-oscuro);
+    color: white;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+.marca {
+    color: var(--nexo-dorado) !important;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+    color: var(--nexo-dorado);
+}
+
+main {
+    min-height: calc(100vh - 150px);
+}
+
+.contenedor-nexo {
+    width: min(1100px, 92%);
+    margin: 34px auto;
+}
+
+.hero-nexo {
+    background: linear-gradient(135deg, var(--nexo-oscuro), #34345b);
+    color: white;
+    border-radius: 18px;
+    padding: clamp(30px, 5vw, 58px);
+    box-shadow: 0 14px 35px rgba(30, 30, 47, 0.22);
+}
+
+.hero-nexo h1,
+.hero-nexo h2 {
+    color: var(--nexo-dorado);
+    font-weight: 800;
+}
+
+.bloque-nexo {
+    background-color: white;
+    padding: clamp(22px, 4vw, 34px);
+    margin-bottom: 28px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.titulo-seccion {
+    color: var(--nexo-oscuro);
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+.btn-nexo {
+    background-color: var(--nexo-oscuro);
+    color: white;
+    border: 0;
+    border-radius: 9px;
+    padding: 10px 18px;
+    font-weight: 700;
+}
+
+.btn-nexo:hover,
+.btn-nexo:focus {
+    background-color: var(--nexo-oscuro-2);
+    color: var(--nexo-dorado);
+}
+
+.btn-dorado {
+    background-color: var(--nexo-dorado);
+    color: var(--nexo-oscuro);
+    border: 0;
+    border-radius: 9px;
+    padding: 10px 18px;
+    font-weight: 800;
+}
+
+.btn-dorado:hover,
+.btn-dorado:focus {
+    background-color: #ffd86f;
+    color: #111122;
+}
+
+.tarjeta-carta {
+    height: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background-color: white;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tarjeta-carta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.10);
+}
+
+.tarjeta-carta img {
+    width: 100%;
+    height: 285px;
+    object-fit: contain;
+    background: #f0f1f4;
+    padding: 14px;
+}
+
+.tarjeta-carta .contenido {
+    padding: 18px;
+}
+
+.etiqueta {
+    display: inline-block;
+    background-color: #fff2c5;
+    color: #6b4b00;
+    padding: 4px 9px;
+    border-radius: 999px;
+    font-size: 0.84rem;
+    font-weight: 700;
+}
+
+.precio {
+    color: #775000;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.disponible {
+    color: var(--nexo-exito);
+    font-weight: 700;
+}
+
+.sin-stock {
+    color: var(--nexo-error);
+    font-weight: 700;
+}
+
+.resumen-card {
+    border-left: 5px solid var(--nexo-dorado);
+    background: #fff;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.06);
+}
+
+.resumen-card strong {
+    display: block;
+    font-size: 1.9rem;
+    color: var(--nexo-oscuro);
+}
+
+.carrusel-nexo {
+    position: relative;
+    overflow: hidden;
+    min-height: 410px;
+}
+
+.slide-nexo {
+    display: none;
+    grid-template-columns: minmax(240px, 360px) 1fr;
+    align-items: center;
+    gap: 28px;
+    animation: aparecer 0.25s ease;
+}
+
+.slide-nexo.activo {
+    display: grid;
+}
+
+.slide-nexo img {
+    width: 100%;
+    max-height: 360px;
+    object-fit: contain;
+    background: #f2f3f6;
+    padding: 14px;
+    border-radius: 14px;
+}
+
+@keyframes aparecer {
+    from { opacity: 0.4; transform: translateX(12px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--nexo-dorado);
+    box-shadow: 0 0 0 0.2rem rgba(244, 201, 93, 0.25);
+}
+
+.error-campo {
+    color: var(--nexo-error);
+    font-size: 0.9rem;
+    min-height: 1.35rem;
+    margin-top: 4px;
+}
+
+.campo-error {
+    border-color: var(--nexo-error) !important;
+}
+
+.alerta-local {
+    display: none;
+    border-radius: 10px;
+    padding: 13px 15px;
+    margin-top: 15px;
+}
+
+.alerta-local.visible {
+    display: block;
+}
+
+.alerta-local.exito {
+    background: #eaf7ef;
+    color: #14532d;
+    border: 1px solid #b7e2c5;
+}
+
+.alerta-local.error {
+    background: #fff0ef;
+    color: #8f1d14;
+    border: 1px solid #f4b7b1;
+}
+
+.login-fondo {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 28px 14px;
+    background:
+        radial-gradient(circle at 10% 10%, rgba(244, 201, 93, 0.20), transparent 30%),
+        linear-gradient(135deg, #171724, #31314f);
+}
+
+.login-card {
+    width: min(480px, 100%);
+    background: white;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 18px 46px rgba(0, 0, 0, 0.28);
+}
+
+.login-card h1 {
+    color: var(--nexo-oscuro);
+    font-weight: 900;
+}
+
+.demo-box {
+    background: #fff8dc;
+    border-left: 5px solid var(--nexo-dorado);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 0.93rem;
+}
+
+.admin-only {
+    display: none;
+}
+
+.tabla-wrap {
+    overflow-x: auto;
+}
+
+table th {
+    white-space: nowrap;
+}
+
+.imagen-detalle {
+    width: 100%;
+    max-height: 520px;
+    object-fit: contain;
+    background: #f2f3f6;
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.video-responsive {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #111;
+}
+
+.video-responsive iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+footer {
+    background: var(--nexo-oscuro);
+    color: white;
+    padding: 22px 15px;
+    text-align: center;
+    margin-top: 38px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .slide-nexo {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .slide-nexo img {
+        max-height: 280px;
+    }
+
+    .tarjeta-carta img {
+        height: 240px;
+    }
+
+    .bloque-nexo {
+        padding: 20px;
+    }
+}

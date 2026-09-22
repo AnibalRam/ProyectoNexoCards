@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexoCartas | Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark container py-3" aria-label="Navegación principal">
+        <a class="navbar-brand marca" href="index.html">NexoCartas</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navNexo" aria-controls="navNexo" aria-expanded="false" aria-label="Abrir navegación">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navNexo">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item admin-only"><a class="nav-link" href="admin.html">Administración</a></li>
+                <li class="nav-item"><a class="nav-link cerrarSesion" href="#">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="contenedor-nexo">
+        <section class="hero-nexo mb-4">
+            <p class="text-uppercase small mb-2">Colecciona · Explora · Descubre</p>
+            <h1>Tu colección comienza aquí</h1>
+            <p class="lead">Consulta cartas coleccionables de temática Pokémon, anime y manga en un catálogo simple y rápido.</p>
+            <p>Sesión: <strong id="usuarioActivo">cargando...</strong></p>
+            <a class="btn btn-dorado" href="catalogo.html">Explorar catálogo</a>
+        </section>
+
+        <section class="bloque-nexo" aria-labelledby="resumenTitulo">
+            <h2 id="resumenTitulo" class="titulo-seccion">Resumen del catálogo</h2>
+            <div class="row g-3">
+                <div class="col-12 col-md-6">
+                    <article class="resumen-card">
+                        <span>Cartas activas</span>
+                        <strong id="contadorActivas">0</strong>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6">
+                    <article class="resumen-card">
+                        <span>Cartas sin stock</span>
+                        <strong id="contadorSinStock">0</strong>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="bloque-nexo" aria-labelledby="destacadasTitulo">
+            <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
+                <h2 id="destacadasTitulo" class="titulo-seccion mb-0">Cartas destacadas</h2>
+                <span id="estadoCarrusel" class="text-secondary" aria-live="polite"></span>
+            </div>
+            <div id="carruselDestacadas" class="carrusel-nexo"></div>
+            <div class="d-flex justify-content-center gap-2 mt-3">
+                <button id="anterior" class="btn btn-outline-dark" type="button" aria-label="Carta anterior">Anterior</button>
+                <button id="siguiente" class="btn btn-nexo" type="button" aria-label="Carta siguiente">Siguiente</button>
+            </div>
+        </section>
+
+        <section class="bloque-nexo" aria-labelledby="videoTitulo">
+            <h2 id="videoTitulo" class="titulo-seccion">Video temático</h2>
+            <p>Video embebido para demostrar el uso de contenido multimedia dentro de la página.</p>
+            <div class="video-responsive">
+                <iframe src="https://www.youtube.com/embed/1roy4o4tqQM" title="Video temático de cartas" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2026 NexoCartas · Proyecto académico DSY1104 Desarrollo Fullstack II</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/datos.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/sesion.js"></script>
+<script src="js/inicio.js"></script>
+</body>
+</html>
