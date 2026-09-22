@@ -1,0 +1,11 @@
+.admin-only {
+    display: none;
+}
+
+.tabla-wrap {
+    overflow-x: auto;
+}
+
+table th {
+    white-space: nowrap;
+}
