@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
 
     protegerPagina();
@@ -5,15 +6,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const listaCarrito = document.querySelector("#listaCarrito");
     const totalCarrito = document.querySelector("#totalCarrito");
     const botonFinalizarCompra = document.querySelector("#btnFinalizarCompra");
+    const resumenCarrito = document.querySelector("#resumenCarrito");
+    const mensajeCarrito = document.querySelector("#mensajeCarrito");
 
     function mostrarCarrito() {
-
+        actualizarContadorCarrito();
         const carrito = obtenerCarrito();
 
         listaCarrito.innerHTML = "";
 
         if (!carrito.length) {
-
             listaCarrito.innerHTML = `
                 <div class="alert alert-info">
                     Tu carrito está vacío.
@@ -21,9 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
 
             totalCarrito.textContent = "$0";
+            resumenCarrito.style.display = "none";
+
             return;
         }
-
+        resumenCarrito.style.display = "block";
         let total = 0;
 
         carrito.forEach(item => {
@@ -131,17 +135,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (compraRealizada) {
 
-            alert("Compra realizada correctamente.");
+            mensajeCarrito.innerHTML = `
+                <div class="alert alert-success">
+                    Compra realizada correctamente.
+                </div>
+            `;
 
             mostrarCarrito();
-
-        } else {
-
-            alert("El carrito está vacío.");
-
         }
 
     });
-    mostrarCarrito();
-
 });
