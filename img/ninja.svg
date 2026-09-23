@@ -1,10 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="820" viewBox="0 0 600 820" role="img" aria-label="Ninja Carmesí">
-  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#7f1d1d"/><stop offset="1" stop-color="#111827"/></linearGradient></defs>
-  <rect width="600" height="820" rx="40" fill="#1e1e2f"/>
-  <rect x="25" y="25" width="550" height="770" rx="28" fill="url(#g)" stroke="#f4c95d" stroke-width="10"/>
-  <circle cx="300" cy="315" r="150" fill="#ffffff" opacity="0.18"/>
-  <text x="300" y="340" font-family="Arial" font-size="150" text-anchor="middle" fill="#ffffff">忍</text>
-  <rect x="65" y="565" width="470" height="145" rx="24" fill="#ffffff" opacity="0.90"/>
-  <text x="300" y="620" font-family="Arial" font-weight="700" font-size="38" text-anchor="middle" fill="#1e1e2f">Ninja Carmesí</text>
-  <text x="300" y="672" font-family="Arial" font-size="24" text-anchor="middle" fill="#555">NexoCartas · Demo</text>
+  <defs>
+    <linearGradient id="marco" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d7263d"/><stop offset="1" stop-color="#ff8a95"/></linearGradient>
+    <radialGradient id="arte" cx=".5" cy=".45" r=".75"><stop offset="0" stop-color="#d7263d"/><stop offset="1" stop-color="#15152b"/></radialGradient>
+    <linearGradient id="holo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="600" height="820" rx="40" fill="#15152b"/>
+  <rect x="18" y="18" width="564" height="784" rx="30" fill="url(#marco)" stroke="#f4c95d" stroke-width="8"/>
+  <text x="58" y="86" font-family="Arial" font-weight="800" font-size="40" fill="#15152b">Ninja Carmesí</text>
+  <text x="542" y="86" font-family="Arial" font-weight="700" font-size="24" text-anchor="end" fill="#15152b">Sombra</text>
+  <rect x="52" y="112" width="496" height="420" rx="18" fill="url(#arte)" stroke="#15152b" stroke-width="5"/>
+  <g fill="none" stroke="#fff" opacity=".16" stroke-width="3"><circle cx="300" cy="322" r="80"/><circle cx="300" cy="322" r="130"/><circle cx="300" cy="322" r="180"/></g>
+  <g transform="translate(300 322)" fill="#fff" opacity=".96"><polygon points="0,-140 24,-24 140,0 24,24 0,140 -24,24 -140,0 -24,-24"/><circle r="26" fill="#15152b"/></g>
+  <rect x="52" y="112" width="496" height="420" rx="18" fill="url(#holo)"/>
+  <rect x="52" y="556" width="496" height="196" rx="18" fill="#fff" opacity=".93"/>
+  <text x="76" y="600" font-family="Arial" font-weight="700" font-size="24" fill="#15152b">Anime · ANI-002</text>
+  <text x="76" y="640" font-family="Arial" font-size="26" fill="#c98f00">★★★</text>
+  <text x="76" y="716" font-family="Arial" font-weight="800" font-size="34" fill="#15152b">ATK 240</text>
+  <text x="300" y="716" font-family="Arial" font-weight="800" font-size="34" fill="#15152b">DEF 120</text>
+  <text x="524" y="716" font-family="Arial" font-size="20" text-anchor="end" fill="#555">NexoCartas</text>
 </svg>

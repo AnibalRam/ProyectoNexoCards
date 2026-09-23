@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap");
 :root {
     --nexo-oscuro: #1e1e2f;
     --nexo-oscuro-2: #2d2d46;
@@ -352,4 +353,72 @@ footer p {
     .bloque-nexo {
         padding: 20px;
     }
+}
+
+/* ===== Mejoras visuales NexoCartas ===== */
+:root {
+    --nexo-violeta: #7c5cff;
+    --nexo-oscuro: #15152b;
+    --nexo-oscuro-2: #26264a;
+    --nexo-fondo: #f3f1fa;
+}
+
+body { font-family: "Nunito Sans", Arial, sans-serif; }
+
+h1, h2, h3, h4, .marca, .precio, .resumen-card strong {
+    font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+    letter-spacing: 0.3px;
+}
+
+header.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(90deg, #15152b, #26264a);
+    border-bottom: 3px solid var(--nexo-dorado);
+}
+
+.marca { font-size: 1.7rem; font-weight: 800; }
+.marca img { filter: drop-shadow(0 2px 6px rgba(124, 92, 255, 0.55)); }
+.navbar .nav-link { border-radius: 8px; padding: 8px 14px; transition: background-color 0.2s; }
+.navbar .nav-link:hover { background-color: rgba(255, 255, 255, 0.08); }
+
+.hero-nexo {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 85% 20%, rgba(124, 92, 255, 0.55), transparent 42%),
+        radial-gradient(circle at 10% 100%, rgba(244, 201, 93, 0.25), transparent 40%),
+        linear-gradient(135deg, #15152b, #2b2b55);
+    border: 1px solid rgba(244, 201, 93, 0.35);
+}
+.hero-nexo h1 { font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.05; }
+.hero-nexo .lema { color: #cfc6ff; font-weight: 700; font-size: 1.05rem; }
+
+.bloque-nexo { border: 1px solid #e6e2f3; box-shadow: 0 10px 30px rgba(21, 21, 43, 0.07); }
+.titulo-seccion { font-size: 2rem; }
+
+.tarjeta-carta { border: 1px solid #e6e2f3; border-radius: 16px; }
+.tarjeta-carta:hover { transform: translateY(-6px); box-shadow: 0 16px 30px rgba(124, 92, 255, 0.22); }
+.tarjeta-carta img {
+    background: radial-gradient(circle at 50% 40%, #34346b, #15152b);
+    padding: 20px;
+}
+.tarjeta-carta h3 { font-size: 1.5rem; }
+
+.etiqueta { background-color: #ece7ff; color: #4a32b8; }
+.precio { color: #b07a00; font-size: 1.6rem; }
+.resumen-card { border-left-color: var(--nexo-violeta); }
+.slide-nexo img, .imagen-detalle { background: radial-gradient(circle at 50% 40%, #34346b, #15152b); }
+
+.btn-nexo { background-color: var(--nexo-violeta); }
+.btn-nexo:hover, .btn-nexo:focus { background-color: #6244e6; color: #fff; }
+
+.logo-login { display: block; margin: 0 auto 8px; filter: drop-shadow(0 4px 10px rgba(124, 92, 255, 0.45)); }
+.login-card h1 { font-size: 2.6rem; }
+
+footer { border-top: 3px solid var(--nexo-dorado); }
+
+@media (prefers-reduced-motion: reduce) {
+    .tarjeta-carta, .slide-nexo { transition: none; animation: none; }
 }

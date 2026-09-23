@@ -70,6 +70,102 @@ const CARTAS_INICIALES = [
         imagen: "img/mewtwo.svg",
         activo: false,
         destacado: false
+    },
+    {
+        id: 7,
+        codigo: "PKM-004",
+        nombre: "Blastoise",
+        categoria: "Pokémon",
+        descripcion: "Carta de demostración tipo agua con cañones de alta presión.",
+        precio: 21990,
+        stock: 5,
+        imagen: "img/blastoise.svg",
+        activo: true,
+        destacado: false
+    },
+    {
+        id: 8,
+        codigo: "PKM-005",
+        nombre: "Gengar",
+        categoria: "Pokémon",
+        descripcion: "Carta de demostración tipo fantasma, ideal para mazos de sombras.",
+        precio: 15990,
+        stock: 7,
+        imagen: "img/gengar.svg",
+        activo: true,
+        destacado: false
+    },
+    {
+        id: 9,
+        codigo: "ANI-003",
+        nombre: "Espadachín Lunar",
+        categoria: "Anime",
+        descripcion: "Carta ficticia de un espadachín que canaliza el poder de la luna.",
+        precio: 11990,
+        stock: 4,
+        imagen: "img/espadachin-lunar.svg",
+        activo: true,
+        destacado: false
+    },
+    {
+        id: 10,
+        codigo: "ANI-004",
+        nombre: "Maga Estelar",
+        categoria: "Anime",
+        descripcion: "Carta ficticia de una maga que invoca la energía de las estrellas.",
+        precio: 13990,
+        stock: 2,
+        imagen: "img/maga-estelar.svg",
+        activo: true,
+        destacado: true
+    },
+    {
+        id: 11,
+        codigo: "MNG-002",
+        nombre: "Samurái Errante",
+        categoria: "Manga",
+        descripcion: "Carta ficticia de un samurái solitario que recorre el país.",
+        precio: 9490,
+        stock: 9,
+        imagen: "img/samurai-errante.svg",
+        activo: true,
+        destacado: false
+    },
+    {
+        id: 12,
+        codigo: "MNG-003",
+        nombre: "Cazador de Sombras",
+        categoria: "Manga",
+        descripcion: "Carta ficticia de un cazador que se mueve entre las sombras.",
+        precio: 10490,
+        stock: 0,
+        imagen: "img/cazador-sombras.svg",
+        activo: true,
+        destacado: false
+    },
+    {
+        id: 13,
+        codigo: "FAN-001",
+        nombre: "Dragón Esmeralda",
+        categoria: "Fantasía",
+        descripcion: "Carta ficticia de un dragón ancestral, la más poderosa de la colección.",
+        precio: 29990,
+        stock: 2,
+        imagen: "img/dragon-esmeralda.svg",
+        activo: true,
+        destacado: true
+    },
+    {
+        id: 14,
+        codigo: "FAN-002",
+        nombre: "Guardián de Cristal",
+        categoria: "Fantasía",
+        descripcion: "Carta ficticia de un guardián de cristal con defensa excepcional.",
+        precio: 16990,
+        stock: 5,
+        imagen: "img/guardian-cristal.svg",
+        activo: true,
+        destacado: false
     }
 ];
 

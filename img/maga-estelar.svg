@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="820" viewBox="0 0 600 820" role="img" aria-label="Maga Estelar">
+  <defs>
+    <linearGradient id="marco" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e0479e"/><stop offset="1" stop-color="#ffb3dd"/></linearGradient>
+    <radialGradient id="arte" cx=".5" cy=".45" r=".75"><stop offset="0" stop-color="#e0479e"/><stop offset="1" stop-color="#15152b"/></radialGradient>
+    <linearGradient id="holo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="600" height="820" rx="40" fill="#15152b"/>
+  <rect x="18" y="18" width="564" height="784" rx="30" fill="url(#marco)" stroke="#f4c95d" stroke-width="8"/>
+  <text x="58" y="86" font-family="Arial" font-weight="800" font-size="40" fill="#15152b">Maga Estelar</text>
+  <text x="542" y="86" font-family="Arial" font-weight="700" font-size="24" text-anchor="end" fill="#15152b">Magia</text>
+  <rect x="52" y="112" width="496" height="420" rx="18" fill="url(#arte)" stroke="#15152b" stroke-width="5"/>
+  <g fill="none" stroke="#fff" opacity=".16" stroke-width="3"><circle cx="300" cy="322" r="80"/><circle cx="300" cy="322" r="130"/><circle cx="300" cy="322" r="180"/></g>
+  <g transform="translate(300 322)" fill="#fff" opacity=".96"><polygon points="0,-135 38,-42 138,-38 60,25 86,122 0,68 -86,122 -60,25 -138,-38 -38,-42"/></g>
+  <rect x="52" y="112" width="496" height="420" rx="18" fill="url(#holo)"/>
+  <rect x="52" y="556" width="496" height="196" rx="18" fill="#fff" opacity=".93"/>
+  <text x="76" y="600" font-family="Arial" font-weight="700" font-size="24" fill="#15152b">Anime · ANI-004</text>
+  <text x="76" y="640" font-family="Arial" font-size="26" fill="#c98f00">★★★★</text>
+  <text x="76" y="716" font-family="Arial" font-weight="800" font-size="34" fill="#15152b">ATK 230</text>
+  <text x="300" y="716" font-family="Arial" font-weight="800" font-size="34" fill="#15152b">DEF 190</text>
+  <text x="524" y="716" font-family="Arial" font-size="20" text-anchor="end" fill="#555">NexoCartas</text>
+</svg>
